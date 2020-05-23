@@ -98,7 +98,6 @@ export default {
 <style>
   #welcome {
     margin-top: 10px;
-    /* height: 70vh; */
   }
 
   .homebord {
@@ -145,7 +144,7 @@ export default {
     border-radius: 3px;
     width: 100px;
     padding: 10px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     color: rgb(22, 21, 21);
   }
 
@@ -155,7 +154,7 @@ export default {
     color: rgb(105, 241, 228);
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
 
   .hometext {
     text-align: center;
@@ -165,6 +164,10 @@ export default {
 
   .hometext1 {
     font-size: 27px;
+  }
+
+  .cta a {
+    margin-left: 30px;
   }
 
   }
