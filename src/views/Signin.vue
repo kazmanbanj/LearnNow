@@ -20,13 +20,13 @@
       <!-- <h5><input type="button" value="Reset Password" class="btn btn-success" @click="resetPassword"></h5> -->
       
       <div class="submit1">
-        <button type="submit" style="margin-left:105px; border-radius: 5px">Sign in with email</button>
+        <button type="submit" class="emailbtn">Sign in with email</button>
       </div>
     </form>
     <div class="error" v-if="error">{{ error.message }}</div><br><h5 style="text-align:center; font-weight:bold">Or</h5>
-    <div class="submit" style="margin-top:15px">
+    <div class="submit" style="margin-top:15px;">
       <!-- <h3 class="signinhead">Sign in with Google</h3> -->
-      <button @click="signInWithgoogle" style="margin-top:5px; margin-left:100px; margin-bottom:10px; border-radius: 5px;">Sign in with Google</button>
+      <button @click="signInWithgoogle" class="googlebtn">Sign in with Google</button>
     </div>
     <span class="signfoot">Need an account? Click here to <router-link to="/signup">register</router-link></span>
   </div>
@@ -124,7 +124,6 @@ import { auth, signInWithGoogle } from '../firebase/firebase.utils'
     border: 1px solid #eee;
     padding: 20px;
     box-shadow: 0 2px 3px #ccc;
-    height: 75vh;
   }
 
   .signinhead {
@@ -155,6 +154,18 @@ import { auth, signInWithGoogle } from '../firebase/firebase.utils'
     outline: none;
     border: 1px solid rgb(3, 53, 48);
     background-color: #eee;
+  }
+
+  .emailbtn {
+    margin-left:105px;
+    border-radius: 5px
+  }
+
+  .googlebtn {
+    margin-top:5px;
+    margin-left:100px;
+    margin-bottom:10px;
+    border-radius: 5px;
   }
 
   #showbtn {
@@ -200,7 +211,52 @@ import { auth, signInWithGoogle } from '../firebase/firebase.utils'
   }
 
   .signfoot {
-    margin-left:40px;
+    margin-left:60px;
     font-style: italic;
   }
+
+   @media only screen and (max-width: 768px) {
+   .signin-form {
+    width: 280px;
+    margin: 50px auto;
+    border: 1px solid #eee;
+    padding: 20px;
+    box-shadow: 0 2px 3px #ccc;
+  }
+
+  .input input {
+    font: inherit;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+  .submit button {
+    border: 1px solid rgb(3, 53, 48);
+    color: rgb(3, 53, 48);
+    padding: 10px 10px;
+    font: inherit;
+    cursor: pointer;
+    margin-left:40px;
+    border-radius:5px;
+  }
+
+  .emailbtn {
+    margin-left: 40px;
+    border-radius: 5px
+  }
+
+  .googlebtn {
+    margin-top:5px;
+    margin-left:10px;
+    margin-bottom:10px;
+    border-radius: 5px;
+  }
+
+  .signfoot {
+    margin-left: 0px;
+    font-style: italic;
+  }
+}
 </style>
