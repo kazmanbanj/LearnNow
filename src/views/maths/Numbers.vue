@@ -8,7 +8,7 @@
                     <span><a @click="addItem">Next Number</a></span>
                 </div>
                 <br>
-                <div class="infotxt"><h3><u>Info:</u></h3><ul><li id="textbig">click on the "Next Number" button above to display the next number</li><br><li id="textbig">Also, click on any of the number to delete it</li></ul></div>
+                <div class="infotxt"><h3><u>Info:</u></h3><ul><li class="textbig">click on the "Next Number" button to display the next number</li></ul></div>
                 <br>
             </div>
             <div class="seconddiv">
@@ -16,10 +16,9 @@
                     <transition-group name="slide">
                         <li
                             class="dflexi"
-                            v-for="(number, index) in numbers"
-                            @click="removeItem(index)"
-                            style="cursor: pointer"
-                            :key="number"><h2>{{ number }}</h2>
+                            v-for="(number) in numbers"
+                            :key="number"
+                            style="cursor: pointer"><h2>{{ number }}</h2>
                         </li>
                     </transition-group>
                 </ul>
@@ -40,9 +39,9 @@ export default {
             const pos = Math.floor(this.numbers.length);
             this.numbers.splice(pos, 0, this.numbers.length + 1);
         },
-        removeItem(index) {
-            this.numbers.splice(index, 1);
-        }
+        // removeItem(index) {
+        //     this.numbers.splice(index, 1);
+        // }
     }
 }
 </script>
@@ -53,7 +52,7 @@ export default {
         padding: 0;
     }
 
-    #textbig {
+    .textbig {
         font-size: 20px;
         list-style: none;
     }
@@ -71,7 +70,7 @@ export default {
         display: inline-block;
         border: 1px solid rgb(3, 53, 48);
         border-radius: 3px;
-        width: 200px;
+        width: 150px;
         padding: 8px;
         font-size: 15px;
         /* box-sizing: border-box; */
@@ -110,13 +109,13 @@ export default {
 
     .firstdiv {
         width: 20%;
-        height: 100vh;
+        height: 450px;
         position: fixed;
     }
 
     .seconddiv {
         width: 80%;
-        margin-left: 29%;
+        margin-left: 27%;
         margin-bottom: 400px;
     }
 
@@ -240,20 +239,25 @@ export default {
     .firstdiv {
         width: 20%;
         margin-top: 10px;
-        height: 100vh;
+        height: 450px;
         position: fixed;
     }
 
     .seconddiv {
         width: 80%;
-        margin-left: 29%;
+        margin-left: 27%;
     }
 
     .dflexi {
-        margin-bottom: 15px;
+        margin-bottom: 11px;
+        /* margin-right: 6px; */
         display: inline-block; 
         flex-wrap: wrap;
-        padding: 0px 10px;
+        padding: 0px 7px;
+    }
+
+    .dflexi h2 {
+        font-size: 25px;
     }
 
     h1 {
@@ -270,8 +274,8 @@ export default {
         font-size: 19px;
     }
 
-    #textbig {
-        font-size: 20px;
+    .textbig {
+        font-size: 14px;
         /* margin-bottom: 5px; */
         line-height: 18px;
     }
