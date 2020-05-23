@@ -15,10 +15,9 @@
                         <td>Email:</td>
                         <td>banjoko10@gmail.com</td>
                     </tr>
-                    <tr>
+                    <tr id="phone">
                         <td>Phone:</td>
-                        <td>+2348084833968</td>
-                        <td>+2348163282411</td>
+                        <td>+2348084833968,  +2348163282411</td>
                     </tr>
                     <tr>
                         <td>Address:</td>
@@ -43,7 +42,7 @@ export default {
 <style>
 
 body {
-    background-color: #55ffe5;
+    /* background-color: #55ffe5; */
     font-size: 14px;
 }
 
@@ -102,50 +101,21 @@ tr td {
 @media only screen and (max-width: 768px) {
 
 .contact-box {
-    background-color: #fff;
-    display: inline-block;
+    /* background-color: #fff; */
+    display: block;
     /* margin: 30px 0 30px 0; */
 }
 
 .contact-right {
-    /* flex-basis: 50%; */
-    /* padding: 40px; */
-    background: #123B37;
-    color: white;
+    width: 100%;
+    /* background: #123B37;
+    color: white; */
 }
 
-h1 {
-    margin-bottom: 10px;
-    font-size: 30px;
+.contact-left {
+    width: 100%;
+    margin-top: 10px;
 }
 
-.container p {
-    margin-bottom: 40px;
-}
-
-.contact-left h3 {
-    /* color: #1c00b5; */
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-.contact-left p {
-    font-size: 16px;
-    line-height: 40px;
-}
-
-.contact-right h3 {
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-tr td:first-child {
-    padding-right: 20px;
-}
-
-tr td {
-    padding-top: 20px;
-    font-size: 15px;
-}
 }
 </style>
