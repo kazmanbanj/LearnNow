@@ -5,11 +5,11 @@
         </div>
         <div class="contact-box">
             <div class="contact-left">                
-                <h3 style="text-align: center;"><u>Connect With Us</u></h3>
-                <p>We are here to help and answer any question you might have.<br> We look forward to hearing from you.</p>
+                <h3><u>Connect With Us</u></h3>
+                <p class="connecttext">We are here to help and answer any question you might have.<br> We look forward to hearing from you.</p>
             </div>
             <div class="contact-right">
-                <h3 style="text-align: center;"><u>Reach Us</u></h3>
+                <h3><u>Reach Us</u></h3>
                 <table>
                     <tr>
                         <td>Email:</td>
@@ -76,7 +76,7 @@ h1 {
 .contact-left h3 {
     /* color: #1c00b5; */
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .contact-left p {
@@ -94,8 +94,12 @@ tr td:first-child {
 }
 
 tr td {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 17px;
+}
+
+h3 u {
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -115,6 +119,24 @@ tr td {
 .contact-left {
     width: 100%;
     margin-top: 10px;
+}
+
+h3 u {
+    /* text-align: center; */
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+tr td {
+    padding: -8px;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.contact-left p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 4px;
 }
 
 }
