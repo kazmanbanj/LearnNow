@@ -1,6 +1,6 @@
 <template>
 <footer>
-    <div class="row">
+    <div class="row flexfoot">
         <div class="col span-1-of-2">
             <ul class="social-links">
                 <li><a href="https://github.com/kazmanbanj"><ion-icon name="logo-github" class="ion-social-github"></ion-icon></a></li>
@@ -49,6 +49,7 @@ footer {
 .social-links {
     list-style: none;
     float: left;
+    margin-top: 5px;
 }
 
 .footer-nav li,
@@ -122,7 +123,26 @@ footer p {
 
 .social-links li a:link,
 .social-links li a:visited {
-    font-size: 150%;
+    font-size: 120%;
+}
+
+.foottext {
+    font-size: 11px;
+}
+
+.flexfoot {
+    display: inline-block;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    /* font-size: 80%; */
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
   }
 
