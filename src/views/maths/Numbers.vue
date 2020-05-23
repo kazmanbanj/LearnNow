@@ -245,7 +245,7 @@ export default {
 
     .seconddiv {
         width: 80%;
-        margin-left: 27%;
+        margin-left: 30%;
     }
 
     .dflexi {
