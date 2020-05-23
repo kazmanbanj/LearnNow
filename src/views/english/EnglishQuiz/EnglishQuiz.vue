@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
     .english {
-        height: 65vh;
+        height: 450px;
     }
 
     .tophead {
