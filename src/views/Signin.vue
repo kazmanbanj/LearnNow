@@ -1,0 +1,206 @@
+<template>
+  <div class="signin-form">
+    <p class="signinhead">Sign in to your account</p>
+    <form @submit.prevent="pressed">
+      <div class="input">
+        <label for="email">Mail</label>
+        <input
+                type="email"
+                id="email"
+                v-model="email">
+      </div>
+      <div class="input">
+        <label for="password">Password</label>
+        <input
+                type="password"
+                id="password"
+                v-model="password">
+      </div>
+      <h5 id="showbtn"><input type="checkbox" id="showMe" class="input-field" @click="showPassword">Show Password</h5>
+      <!-- <h5><input type="button" value="Reset Password" class="btn btn-success" @click="resetPassword"></h5> -->
+      
+      <div class="submit1">
+        <button type="submit" style="margin-left:105px; border-radius: 5px">Sign in with email</button>
+      </div>
+    </form>
+    <div class="error" v-if="error">{{ error.message }}</div><br><h5 style="text-align:center; font-weight:bold">Or</h5>
+    <div class="submit" style="margin-top:15px">
+      <!-- <h3 class="signinhead">Sign in with Google</h3> -->
+      <button @click="signInWithgoogle" style="margin-top:5px; margin-left:100px; margin-bottom:10px; border-radius: 5px;">Sign in with Google</button>
+    </div>
+    <span class="signfoot">Need an account? Click here to <router-link to="/signup">register</router-link></span>
+  </div>
+</template>
+
+<script>
+// import axios from '../axios-auth';
+// import * as firebase from 'firebase/app';
+// import 'firebase/auth';
+import swal from 'sweetalert';
+import { auth, signInWithGoogle } from '../firebase/firebase.utils'
+
+
+  export default {
+    data () {
+      return {
+        email: null,
+        password: '',
+        error: ''
+      }
+    },
+    methods: {
+      async pressed () {
+        try {
+          const val = await auth.signInWithEmailAndPassword(this.email, this.password)
+          // console.log(val)
+          .then(() => swal({
+              title: `Signed in as ${this.email}!`,
+              text: "You've successfully signed in!",
+              icon: "success",
+              button: "Continue",
+            }))
+          this.$router.replace({name: 'Home'})
+        } catch(error) {
+          swal({
+            title: "Wrong Email or Password!",
+            text: "Please, input the correct login details or check your internet connection and try again!",
+            // icon: "warning",
+            button: "OK",
+            dangerMode: true,
+          })
+        }
+      },
+
+      async signInWithgoogle () { 
+        try {
+        // const provider = new firebase.auth.GoogleAuthProvider()
+        // firebase.auth().signInWithPopup(provider)
+        signInWithGoogle()
+        .then(() => swal({
+            title: `Welcome!`,
+            text: "You've successfully signed in!",
+            icon: "success",
+            button: "Continue",
+          }))
+          this.$router.replace({name: 'Home'})
+      } catch(error) {
+          swal({
+            title: "Login Failed!",
+            text: "Please, input the correct login details or check your internet connection and try again!",
+            // icon: "warning",
+            button: "OK",
+            dangerMode: true,
+          })
+        }
+    },
+    showPassword() {
+          var Pass = document.getElementById("password");
+          var confirmPass = document.getElementById("confirmPassword");
+          var showPass = document.getElementById("showMe");
+          if (showPass.checked) {
+                Pass.setAttribute('type', 'text');
+            } else {
+                Pass.setAttribute('type', 'password');
+            }
+            // showPass.addEventListener("click", showPassword);
+        },
+      // resetPassword() {
+      //   var auth = firebase.auth();
+      //   console.log(auth);
+      //   auth.sendPasswordResetEmail(auth.currentUser.email).then(() => {
+      //     console.log('sent')
+      //   }).catch((error) => {
+      //     console.log(error)
+      //   });
+      // }
+    }
+  }
+</script>
+
+<style scoped>
+  .signin-form {
+    width: 400px;
+    margin: 30px auto;
+    border: 1px solid #eee;
+    padding: 20px;
+    box-shadow: 0 2px 3px #ccc;
+    height: 75vh;
+  }
+
+  .signinhead {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .input {
+    margin: 10px auto;
+  }
+
+  .input label {
+    display: block;
+    color: #4e4e4e;
+    margin-bottom: 6px;
+  }
+
+  .input input {
+    font: inherit;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+  .input input:focus {
+    outline: none;
+    border: 1px solid rgb(3, 53, 48);
+    background-color: #eee;
+  }
+
+  #showbtn {
+    font-size: 15px;
+  }
+
+  .submit button {
+    border: 1px solid rgb(3, 53, 48);
+    color: rgb(3, 53, 48);
+    padding: 10px 20px;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .submit button:hover,
+  .submit button:active {
+    background-color: rgb(3, 53, 48);
+    color: white;
+  }
+
+  .submit button[disabled],
+  .submit button[disabled]:hover,
+  .submit button[disabled]:active {
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #ccc;
+    cursor: not-allowed;
+  }
+
+    .submit1 button {
+    border: 1px solid rgb(3, 53, 48);
+    background-color: rgb(159, 236, 236);
+    color: rgb(3, 53, 48);
+    padding: 10px 20px;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .submit1 button:hover,
+  .submit1 button:active {
+    background-color: rgb(3, 53, 48);
+    color: white;
+  }
+
+  .signfoot {
+    margin-left:40px;
+    font-style: italic;
+  }
+</style>
