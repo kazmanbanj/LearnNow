@@ -60,8 +60,8 @@
         </div>
 
         <div class="showbtn">
-            <h3 class="card-text" v-if="show">Info: Click on the button below to hide the colour name.</h3>
-            <h3 class="card-text" v-else>Info: Click on the button below to show the colour name.</h3>
+            <h3 class="card-text cardtext" v-if="show">Info: Click on the button below to hide the colour name.</h3>
+            <h3 class="card-text cardtext" v-else>Info: Click on the button below to show the colour name.</h3>
             <button class="btn btn-primary adjbtn" @click="show = !show" v-if="show">Hide name</button>
             <button class="btn btn-primary adjbtn" @click="show = !show" v-else>Show name</button>
         </div>
@@ -85,7 +85,7 @@
             <div class="demo" @click="attachPurple = !attachPurple" :class="{purple: attachPurple}"></div>
         </div>
         <div class="colorchginfo">
-            <h3 class="card-text">Info: Click on any of the boxes above to switch the colour from gray to another colour and vice versa.</h3>
+            <h3 class="card-text cardtext">Info: Click on any of the boxes above to switch the colour from gray to another colour and vice versa.</h3>
         </div>
         <div style="margin-top: 15px">
             <p style="font-size: 20px"><b>Note</b>: <i>Under this, students should be able to differentiate between colours after changing the colour from gray to whatever colour displays.</i></p>
@@ -101,7 +101,7 @@
                 <div class="triangle-up" :style="myStyle"></div>
             </div>
         </div>
-        <h3 class="card-text">Info: Input any colour name in the rectangular box above to display the colour in the triangle above. E.g. Green</h3>
+        <h3 class="card-text cardtext">Info: Input any colour name in the rectangular box above to display the colour in the triangle above. E.g. Green</h3>
         <div style="margin-top: 15px">
             <p style="font-size: 20px"><b>Note</b>: <i>Here, students should be able to know the different kinds of colours we have just by inputting any name of a colour in the box above (e.g. green) so as to display the colour in the triangle.</i></p>
         </div>
@@ -218,6 +218,8 @@ export default {
     .triangle {
         border: 1px solid black;
         width: 305px;
+        border-radius: 5px;
+        margin-right: 4px;
     }
 
     .triangle-up {
@@ -249,8 +251,7 @@ export default {
     }
 
     .colorfoot {
-        /* padding: 20px; */
-        border: 2px solid black;
+    border: 2px solid black;
     margin-bottom: 30px;
     margin-top: 25px;
     border-radius: 15px;
@@ -327,32 +328,42 @@ export default {
         padding: 20px;
     }
 
+    .adjfoot {
+        /* display: inline-block; */
+        margin-right: 8px;
+    }
+
     .triangle {
         border: 1px solid black;
-        width: 305px;
+        width: 10px;
     }
 
     .triangle-up {
         width: 0px;
         height: 0px;
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
         border-bottom: 300px solid transparent;
+        
     }
 
     .triangle-up:after {
         position: absolute;
-        left: 350%;
-        margin-left: -20%;
+        left: 175%;
+        margin-left: 100%;
     }
 
     .inputtri {
-        margin-left: 65px;
         margin-bottom: 25px;
     }
 
     .card-text {
         text-align: center;
+    }
+
+    .colorfoot {
+        padding-right: 7px;
+        border: 2px solid black;
     }
 }
 
@@ -419,14 +430,15 @@ export default {
 
     .triangle {
         border: 1px solid black;
-        width: 305px;
+        width: 265px;
+        margin-bottom: 13px;
     }
 
     .triangle-up {
         width: 0px;
         height: 0px;
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
+        border-left: 130px solid transparent;
+        border-right: 130px solid transparent;
         border-bottom: 300px solid transparent;
     }
 
@@ -437,12 +449,13 @@ export default {
     }
 
     .inputtri {
-        margin-left: 80px;
+        margin-left: 50px;
         margin-bottom: 25px;
     }
 
-    .card-text {
+    .cardtext {
         text-align: center;
+        font-size: 20px;
     }
 }
 
