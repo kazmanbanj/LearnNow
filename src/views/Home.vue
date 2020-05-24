@@ -37,10 +37,10 @@
     </div>
 
     <div id="welcome" v-else>
-      <h1>Welcome to LearnNow Study App</h1>
-      <h2 class="hometext1" style="font-size:40px; margin: 0px">Time to learn something new now!</h2>
+      <h1 class="welcometext">Welcome to LearnNow Study App</h1>
+      <h2 class="hometext1">Time to learn something new now!</h2>
       <p class="hometext">You found the best place to learn - and now you're just one sign in (or sign up) away from it!</p>
-      <div class="cta">
+      <div class="ctad">
         <a href="/signin">Sign In</a>
         <a href="/signup">Sign Up</a>
       </div>
@@ -100,6 +100,11 @@ export default {
     margin-top: 10px;
   }
 
+  .welcometext {    
+    /* background-color: rgba(85, 74, 65, 0.205); */
+    color: rgb(25, 59, 33);
+  }
+
   .homebord {
     border: 2px solid black;
     margin-bottom: 30px;
@@ -124,8 +129,14 @@ export default {
 
   .hometext {
     text-align: center;
-    color: rgb(39, 139, 133);
+    color: rgb(16, 54, 52);
     font-size: 60px;
+    background-color: rgba(235, 236, 240, 0.212);
+  }
+
+  .hometext1 {
+    font-size: 40px;
+    margin: 0px
   }
 
   .homewords {
@@ -133,27 +144,24 @@ export default {
     line-height:55px
   }
 
-  .cta {
-    width: 300px;
+  .ctad {
     margin: auto;
     text-align: center;
   }
 
-  .cta a {
-    margin: 10px;
+  .ctad a {
+    margin: 0px 10px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
     border: 1px solid rgb(3, 53, 48);
     border-radius: 3px;
-    width: 100px;
     padding: 10px;
-    /* box-sizing: border-box; */
     color: rgb(22, 21, 21);
   }
 
-  .cta a:hover,
+  .ctad a:hover,
   .cta a:active {
     background-color: rgb(18,59,55);
     color: rgb(105, 241, 228);
@@ -163,23 +171,37 @@ export default {
 
   .hometext {
     text-align: center;
-    color: rgb(39, 139, 133);
     font-size: 30px;
+  }
+
+  /* .hometext1 {
+    font-size: 30px;
+  } */
+
+  /* .cta a {
+    margin-left: 30px;
+  } */
+
+  @media only screen and (max-width: 890px) {
+    .homewords {
+    font-size:20px;
+    line-height: 34px;
+  }
+
+  
+  }
+
+  @media only screen and (max-width: 400px) {
+    .homewords {
+    font-size:20px;
+    line-height: 30px;
   }
 
   .hometext1 {
     font-size: 27px;
   }
 
-  .cta a {
-    margin-left: 30px;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .homewords {
-    font-size:20px;
-    line-height: 30px;
-  }
+  
   }
 
   }
