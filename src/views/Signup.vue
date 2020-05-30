@@ -246,8 +246,4 @@ import { auth } from '../firebase/firebase.utils'
     border-radius:5px;
   }
  }
-<<<<<<< HEAD
 </style>
-=======
-</style>
->>>>>>> 42ef128511ed4cf954cc780bf014647843c780d1
