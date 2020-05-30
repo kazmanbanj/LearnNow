@@ -56,7 +56,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="/signin">Sign in</a>
             </li>
-            <li class="nav-item ml-sm-3">
+            <li class="nav-item">
                 <a class="nav-link" href="/signup">Sign Up</a>
             </li>
         </ul>

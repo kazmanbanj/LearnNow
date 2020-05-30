@@ -31,10 +31,11 @@
                 v-model="confirmPassword">
         <p id="pfont" v-if="$v.confirmPassword.$error">The password must match the password above.</p>
       </div>
+      <div class="showpassbtn">
 				<h5 id="showbtn"><input type="checkbox" id="showMe" class="input-field" @click="showPassword">Show Password</h5>
-
+      </div>
       <div class="submit">
-        <button type="submit" :disabled="$v.$invalid" style="margin-left:140px; border-radius:5px;">Submit</button>
+        <button type="submit" :disabled="$v.$invalid" class="submitbtn">Submit</button>
       </div>
     </form>
   </div>
@@ -130,6 +131,7 @@ import { auth } from '../firebase/firebase.utils'
     font-size: 25px;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 5px;
   }
 
   .input {
@@ -177,12 +179,18 @@ import { auth } from '../firebase/firebase.utils'
     font: inherit;
   }
 
+  .showpassbtn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
   #showbtn {
     font-size: 15px;
   }
 
   #pfont {
     font-size: 15px;
+    margin-bottom: 4px;
   }
 
   .submit button {
@@ -191,6 +199,8 @@ import { auth } from '../firebase/firebase.utils'
     padding: 10px 20px;
     font: inherit;
     cursor: pointer;
+    margin-left:140px;
+    border-radius:5px;
   }
 
   .submit button:hover,
@@ -207,4 +217,33 @@ import { auth } from '../firebase/firebase.utils'
     color: rgb(3, 53, 48);
     cursor: not-allowed;
   }
+
+
+ @media only screen and (max-width: 768px) {
+   .signup-form {
+    width: 280px;
+    margin: 50px auto;
+    border: 1px solid #eee;
+    padding: 20px;
+    box-shadow: 0 2px 3px #ccc;
+  }
+
+  .input input {
+    font: inherit;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+  .submit button {
+    border: 1px solid rgb(3, 53, 48);
+    color: rgb(3, 53, 48);
+    padding: 10px 20px;
+    font: inherit;
+    cursor: pointer;
+    margin-left:80px;
+    border-radius:5px;
+  }
+ }
 </style>

@@ -160,6 +160,7 @@ methods: {
   .addinput {
       margin-bottom: 20px;
       display: flex;
+      flex-wrap: wrap;
       text-align: center;
   }
 
@@ -213,6 +214,7 @@ methods: {
 
   .result {
       margin-top: 6px;
+      margin-left: 10px;
       height: 3vh;
       padding-right: 10px;
   }
@@ -221,9 +223,9 @@ methods: {
       margin: 10px 10px;
     }
 
-  .input {
+  /* .input {
       width: 270px;
-    }
+    } */
 
   .addinput input, .num1 {
     font: inherit;
@@ -264,7 +266,7 @@ methods: {
 
   .addinput input, .num1 {
     font: inherit;
-    width: 100%;
+    width: 80%;
     box-sizing: border-box;
     border: 1px solid #ccc;
   }

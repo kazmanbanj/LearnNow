@@ -27,7 +27,7 @@
         </div>
         <div class="calcbord">
             <h2 style="margin-bottom: 0px;">LearnNow Caculator</h2>
-            <p style="font-size: 20px; text-align:left;">This basic calculator will be useful for students who are first time user of a calculator. This will enable students to be able to know how to perform arithmetic operations on numbers. Students should also take note of the following information:</p>
+            <p style="font-size: 20px; text-align:left;">This basic calculator will be useful for users who are first time user of a calculator. This will enable the users to be able to know how to perform arithmetic operations on numbers. Users should also take note of the following information:</p>
             <ul>
                 <li style="font-size: 20px; text-align:left">The "C" button above stands for clear i.e. to clear the display screen.</li>
                 <li style="font-size: 20px; text-align:left">The "+/-" button above represents plus or minus sign. It is useful when you want to obtain either a negative number or a positive number. You can derive it by clicking on any number, then click the "+/-" button.</li>
@@ -137,6 +137,8 @@
     grid-column: 1 / 5;
     background-color: #333;
     color: #fff;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 
 .zero {

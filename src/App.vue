@@ -15,7 +15,6 @@
 <script>
 import Header from './views/Header.vue';
 import Footer from './views/Footer.vue';
-// import { db } from 'firebase';
 
 export default {
   components: {

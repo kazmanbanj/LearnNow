@@ -157,7 +157,7 @@
         /* margin-bottom: 8px; */
         margin-left: 2px; 
         margin-right: 2px; 
-        display: inline-block; 
+        display: flex; 
         flex-wrap: wrap;      
     }
 

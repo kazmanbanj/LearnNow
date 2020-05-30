@@ -5,20 +5,19 @@
         </div>
         <div class="contact-box">
             <div class="contact-left">                
-                <h3 style="text-align: center;"><u>Connect With Us</u></h3>
-                <p>We are here to help and answer any question you might have.<br> We look forward to hearing from you.</p>
+                <h3><u>Connect With Us</u></h3>
+                <p class="connecttext">We are here to help and answer any question you might have.<br> We look forward to hearing from you.</p>
             </div>
             <div class="contact-right">
-                <h3 style="text-align: center;"><u>Reach Us</u></h3>
+                <h3><u>Reach Us</u></h3>
                 <table>
                     <tr>
                         <td>Email:</td>
                         <td>banjoko10@gmail.com</td>
                     </tr>
-                    <tr>
+                    <tr id="phone">
                         <td>Phone:</td>
-                        <td>+2348084833968</td>
-                        <td>+2348163282411</td>
+                        <td>+2348084833968,  +2348163282411</td>
                     </tr>
                     <tr>
                         <td>Address:</td>
@@ -43,7 +42,7 @@ export default {
 <style>
 
 body {
-    background-color: #55ffe5;
+    /* background-color: #55ffe5; */
     font-size: 14px;
 }
 
@@ -77,7 +76,7 @@ h1 {
 .contact-left h3 {
     /* color: #1c00b5; */
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .contact-left p {
@@ -95,57 +94,50 @@ tr td:first-child {
 }
 
 tr td {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 17px;
+}
+
+h3 u {
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
 
 .contact-box {
-    background-color: #fff;
-    display: inline-block;
+    /* background-color: #fff; */
+    display: block;
     /* margin: 30px 0 30px 0; */
 }
 
 .contact-right {
-    /* flex-basis: 50%; */
-    /* padding: 40px; */
-    background: #123B37;
-    color: white;
+    width: 100%;
+    /* background: #123B37;
+    color: white; */
 }
 
-h1 {
-    margin-bottom: 10px;
-    font-size: 30px;
+.contact-left {
+    width: 100%;
+    margin-top: 10px;
 }
 
-.container p {
-    margin-bottom: 40px;
-}
-
-.contact-left h3 {
-    /* color: #1c00b5; */
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-.contact-left p {
-    font-size: 16px;
-    line-height: 40px;
-}
-
-.contact-right h3 {
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-tr td:first-child {
-    padding-right: 20px;
+h3 u {
+    /* text-align: center; */
+    font-size: 15px;
+    margin-bottom: 5px;
 }
 
 tr td {
-    padding-top: 20px;
-    font-size: 15px;
+    padding: -8px;
+    font-size: 14px;
+    margin-left: 3px;
 }
+
+.contact-left p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 4px;
+}
+
 }
 </style>
