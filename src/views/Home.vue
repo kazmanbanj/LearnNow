@@ -8,7 +8,11 @@
       </div>
       <div class="homebord">
         <h2 style="text-align:center; text-decoration:underline; margin-bottom: 0px">Alphabets</h2>
-        <p class="homewords"><strong>Alphabets</strong> are a set of letters or symbols in a fixed order used to represent the basic set of speech sounds of a language, which consists of a set of letters from A to Z. The LearnNow Alphabets will help users learn the various alphabets we have. It displays the capital letters, small letters, vowels and consonants for them to study. Know your alphabets with ease by clicking <a href="/alphabet" style="text-decoration: none">Alphabets</a> under the English section to know the various alphabets we have. It will be fun all through as you get to know the Alphabets.</p>
+
+        <p class="homewords"><strong>Alphabets</strong> are a set of letters or symbols in a fixed order used to represent the basic set of speech sounds of a language, which consists of a set of letters from A to Z. The LearnNow Alphabets is basically for nursery school students which displays the capital letters, small letters, vowels and consonants for them to study. Know your alphabets with ease by clicking <a href="/alphabet" style="text-decoration: none">Alphabets</a> under the English section to know the various alphabets we have. It will be fun all through as you get to know the Alphabets.</p>
+=======
+        <p class="homewords"><strong>Alphabets</strong> are a set of letters or symbols in a fixed order used to represent the basic set of speech sounds of a language, which consists of a set of letters from A to Z. The LearnNow Alphabets is basically for nursery school students which displays the capital letters, small letters, vowels and consonants for them to study. Know your alphabets with ease by clicking <a href="/alphabet" style="text-decoration: none">Alphabets</a> under the English section to know the various alphabets we have. It will be fun all through as you get to know the Alphabets.</p>
+>>>>>>> 42ef128511ed4cf954cc780bf014647843c780d1
       </div>
       <div class="homebord">
         <h2 style="text-align:center; text-decoration:underline; margin-bottom: 0px">EngWords</h2>
@@ -16,7 +20,11 @@
       </div>
       <div class="homebord">
         <h2 style="text-align:center; text-decoration:underline; margin-bottom: 0px">Numbers</h2>
-        <p class="homewords"><strong>Number</strong> is an arithmetical value, expressed by a word, symbol, or figure, representing a particular quantity and used in counting and making calculations. They are mathematical objects used to count, measure and label. LearnNow Numbers will helps users learn the various numbers we have. The LearnNow Numbers also lets you add more numbers as you get to know each of them. Know your numbers with ease by clicking <a href="/number" style="text-decoration: none">Numbers</a> under the Maths section to know the various numbers we have. It will be fun all through as it lets you add more numbers in just one click.</p>
+
+        <p class="homewords"><strong>Number</strong> is an arithmetical value, expressed by a word, symbol, or figure, representing a particular quantity and used in counting and making calculations. They are mathematical objects used to count, measure and label. LearnNow Numbers is basically for nursery school students which helps them learn the various numbers we have. The LearnNow Numbers also lets you add more numbers as you get to know each of them. Know your numbers with ease by clicking <a href="/number" style="text-decoration: none">Numbers</a> under the Maths section to know the various numbers we have. It will be fun all through as it lets you add and delete numbers in just one click.</p>
+=======
+        <p class="homewords"><strong>Number</strong> is an arithmetical value, expressed by a word, symbol, or figure, representing a particular quantity and used in counting and making calculations. They are mathematical objects used to count, measure and label. LearnNow Numbers is basically for nursery school students which helps them learn the various numbers we have. The LearnNow Numbers also lets you add more numbers as you get to know each of them. Know your numbers with ease by clicking <a href="/number" style="text-decoration: none">Numbers</a> under the Maths section to know the various numbers we have. It will be fun all through as it lets you add and delete numbers in just one click.</p>
+>>>>>>> 42ef128511ed4cf954cc780bf014647843c780d1
       </div>
       <div class="homebord">
         <h2 style="text-align:center; text-decoration:underline; margin-bottom: 0px">Arithmetic Operators</h2>

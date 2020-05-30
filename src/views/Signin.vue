@@ -259,4 +259,8 @@ import { auth, signInWithGoogle } from '../firebase/firebase.utils'
     font-style: italic;
   }
 }
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> 42ef128511ed4cf954cc780bf014647843c780d1
