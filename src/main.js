@@ -7,7 +7,6 @@ import '@firebase/firestore'
 import 'firebase/auth'
 import Vuelidate from 'vuelidate'
 
-// Vue.use(VueFirestore)
 Vue.use(Vuelidate)
 
 Vue.config.productionTip = false
@@ -23,8 +22,6 @@ const firebaseConfig = {
   messagingSenderId: "299623752447",
   appId: "1:299623752447:web:2e2492cf62d00b6a39e2ca"
 };
-// Initialize Firebase
-// firebase.initializeApp(firebaseConfig);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
@@ -46,9 +43,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   return userRef;
 };
 
-
 let app;
-
 firebase.auth().onAuthStateChanged(user=> {
   if(!app) {
     app = new Vue({
@@ -58,9 +53,3 @@ firebase.auth().onAuthStateChanged(user=> {
     }).$mount('#app')
   }
 })
-
-// new Vue({
-//   router,
-//   store,
-//   render: h => h(App),
-// }).$mount('#app')

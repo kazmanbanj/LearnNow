@@ -86,10 +86,8 @@
     }
 
     .dflexi h2{
-        /* margin-bottom: 8px; */
         margin-left: 3px; 
-        margin-right: 3px; 
-        /* margin-top: 18px; */
+        margin-right: 3px;
         margin-bottom: 7px;
         display: flex; 
         flex-wrap: wrap;
@@ -110,9 +108,7 @@
 
     h2 {
         padding: 40px;
-        margin-left: 19px; 
-        /* margin-right: 8px; */
-        /* margin-top: 18px; */
+        margin-left: 19px;
         margin-bottom: 28px;
     }
 
@@ -129,9 +125,6 @@
     @media only screen and (max-width: 600px) {
   /* For small phones: */
   .dflexi h2{
-        /* margin-bottom: 8px;
-        margin-left: 2px; 
-        margin-right: 2px;  */
         display: flex; 
         flex-wrap: wrap;      
     }
@@ -154,7 +147,6 @@
 @media only screen and (max-width: 768px) {
   /* For tablets: */
   .dflexi h2{
-        /* margin-bottom: 8px; */
         margin-left: 2px; 
         margin-right: 2px; 
         display: flex; 

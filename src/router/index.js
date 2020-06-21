@@ -13,9 +13,6 @@ import Numbers from "../views/maths/Numbers.vue"
 import ArithmeticOperator from "../views/maths/Operators.vue"
 import AddMinus from '../components/addminus.vue'
 import TimesDivide from '../components/timesdivide.vue'
-// import * as firebase from 'firebase/app'
-// import { auth } from '../firebase/firebase.utils'
-// import 'firebase/auth'
 
 Vue.use(VueRouter)
 

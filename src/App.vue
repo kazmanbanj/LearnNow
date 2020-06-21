@@ -13,29 +13,33 @@
 </template>
 
 <script>
-import Header from './views/Header.vue';
-import Footer from './views/Footer.vue';
+import Header from "./views/Header.vue";
+import Footer from "./views/Footer.vue";
 
 export default {
   components: {
     appHeader: Header,
     appFooter: Footer,
-  }
-}
+  },
+};
 </script>
 
 <style>
-  body {
-    padding: 20px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)), url('https://cdn9.dissolve.com/p/D538_225_049/D538_225_049_0004_600.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-attachment: fixed;
-    color: rgb(37, 32, 32);
-  }
+body {
+  padding: 20px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://cdn9.dissolve.com/p/D538_225_049/D538_225_049_0004_600.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+  color: rgb(37, 32, 32);
+}
 
-  .adjustroute {
-    margin-bottom: 40px;
-  }
+.adjustroute {
+  margin-bottom: 40px;
+}
 </style>

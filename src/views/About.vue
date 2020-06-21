@@ -36,7 +36,6 @@ export default {
     line-height: 65px;
     color: rgb(22, 21, 21);
     padding: 5px;
-    /* margin-top: 3px; */
   }
 
   @media only screen and (max-width: 768px) {

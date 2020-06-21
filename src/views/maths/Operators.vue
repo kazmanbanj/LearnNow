@@ -40,7 +40,6 @@
         <p class="result">=</p>
         &nbsp;
         <p class="result">{{ parseInt(number1) + parseInt(number2) }}</p>
-        <!-- <p v-else>This field must not be empty</p> -->
       </div>
       <p class="num1" v-if="$v.number1.$invalid || $v.number2.$invalid">
         Note: The number length must be less than or equal to 16 digits and must
@@ -354,14 +353,9 @@ input {
   margin: 10px 10px;
 }
 
-/* .input {
-      width: 270px;
-    } */
-
 .addinput input,
 .num1 {
   font: inherit;
-  /* width: 100%; */
   box-sizing: border-box;
   border: 1px solid #ccc;
 }
