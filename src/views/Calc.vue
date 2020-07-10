@@ -45,7 +45,7 @@
         >The "÷" button represents the division sign. It is used to divide a number by another number.</li>
         <li
           style="font-size: 20px; text-align:left"
-        >The "x" button represents the multiplication sign. It is used to divide a number by another number.</li>
+        >The "x" button represents the multiplication sign. It is used to multiply a number with another number.</li>
         <li
           style="font-size: 20px; text-align:left"
         >The "-" button represents the minus sign. It is used to minus a number from another number.</li>

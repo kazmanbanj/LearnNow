@@ -66,7 +66,7 @@
         </ul>
         <ul class="navbar-nav mr-sm-2" v-if="loggedIn">
           <li class="nav-item">
-            <a class="nav-link" href="/" @click="signOut">Sign Out</a>
+            <a class="nav-link" href="#" @click="signOut">Sign Out</a>
           </li>
         </ul>
         <ul class="navbar-nav" style="margin: 0px 0px 0px auto;" v-else>
