@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="calcbord">
-      <h2 style="margin-bottom: 0px; text-align:center;">LearnNow Caculator Tips</h2>
+      <h2 style="margin-bottom: 0px; text-align:center; ">LearnNow Caculator Tips</h2>
       <p
         style="font-size: 20px; text-align:left;"
       >This basic calculator will be useful for users who are first time user of a calculator. This will enable the users to be able to know how to perform arithmetic operations on numbers. Users should also take note of the following information:</p>
@@ -184,6 +184,6 @@ h1 {
   margin-bottom: 30px;
   margin-top: 45px;
   border-radius: 15px;
-  padding: 0px 40px 15px 50px;
+  padding: 0px 40px 15px 40px;
 }
 </style>

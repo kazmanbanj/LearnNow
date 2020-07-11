@@ -13,6 +13,8 @@ import Numbers from "../views/maths/Numbers.vue"
 import ArithmeticOperator from "../views/maths/Operators.vue"
 import AddMinus from '../components/addminus.vue'
 import TimesDivide from '../components/timesdivide.vue'
+import * as firebase from 'firebase/app'
+import 'firebase/auth'
 
 Vue.use(VueRouter)
 
@@ -22,20 +24,30 @@ const routes = [
   { path: '/contact', name: 'contact', component: Contact },
   { path: "/signin", name: 'signin', component: Signin },
   { path: "/signup", name: 'signup', component: Signup },
-  { path: "/colors", name: 'colors', component: Colors },
-  { path: "/standardCalc", name: 'standardCalc', component: StandardCalc },
-  { path: "/alphabet", name: 'alphabet', component: Alphabet },
-  { path: "/engQuiz", name: 'engQuiz', component: EngQuiz },
-  { path: "/number", name: 'number', component: Numbers },
-  { path: "/arithmeticOperator", name: 'arithmeticOperator', component: ArithmeticOperator },
-  { path: "/addMinus", name: 'Addminus', component: AddMinus },
-  { path: "/timesDivide", name: 'Timesdivide', component: TimesDivide },
+  { path: "/colors", name: 'colors', component: Colors, meta: {requiresAuth: true} },
+  { path: "/standardCalc", name: 'standardCalc', component: StandardCalc, meta: {requiresAuth: true} },
+  { path: "/alphabet", name: 'alphabet', component: Alphabet, meta: {requiresAuth: true} },
+  { path: "/engQuiz", name: 'engQuiz', component: EngQuiz, meta: {requiresAuth: true} },
+  { path: "/number", name: 'number', component: Numbers, meta: {requiresAuth: true} },
+  { path: "/arithmeticOperator", name: 'arithmeticOperator', component: ArithmeticOperator, meta: {requiresAuth: true} },
+  { path: "/addMinus", name: 'Addminus', component: AddMinus, meta: {requiresAuth: true} },
+  { path: "/timesDivide", name: 'Timesdivide', component: TimesDivide, meta: {requiresAuth: true} },
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
+  const isAuthenticated = firebase.auth().currentUser;
+  if(requiresAuth && !isAuthenticated) {
+    next("/signin");
+  } else {
+    next();
+  }
 })
 
 export default router
