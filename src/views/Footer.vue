@@ -4,7 +4,7 @@
       <div class="col span-1-of-2">
         <ul class="social-links">
           <li>
-            <a href="https://github.com/kazmanbanj">
+            <a href="#">
               <ion-icon name="logo-github" class="ion-social-github"></ion-icon>
             </a>
           </li>

@@ -20,7 +20,7 @@
         <table>
           <tr>
             <td>Email:</td>
-            <td>banjoko10@gmail.com</td>
+            <td>kazbanj@yahoo.com</td>
           </tr>
           <tr id="phone">
             <td>Phone:</td>
