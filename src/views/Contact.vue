@@ -29,8 +29,7 @@
           <tr>
             <td>Address:</td>
             <td>
-              Surulere,
-              <br />Lagos.
+              Surulere, Lagos.
             </td>
           </tr>
         </table>
