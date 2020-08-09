@@ -29,9 +29,7 @@
           <tr>
             <td>Address:</td>
             <td>
-              No 27, Hassan Idowu Street,
-              <br />Aguda,
-              <br />Surulere,
+              Surulere,
               <br />Lagos.
             </td>
           </tr>
