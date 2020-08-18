@@ -159,6 +159,7 @@ export default {
   grid-column: 1 / 5;
   background-color: #333;
   color: #fff;
+  overflow-x: auto;
 }
 
 .zero {
