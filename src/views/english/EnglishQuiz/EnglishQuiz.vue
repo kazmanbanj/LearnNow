@@ -8,7 +8,7 @@
     <div class="cta">
       <span><a @click="gentext">Generate word</a></span>
     </div>
-    <p id="press"></p>
+    <p id="press" style="word-wrap:break-word;"></p>
   </div>
 </template>
 

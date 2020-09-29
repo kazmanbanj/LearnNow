@@ -160,6 +160,7 @@ export default {
   background-color: #333;
   color: #fff;
   overflow-x: auto;
+  word-wrap: break-word;
 }
 
 .zero {
