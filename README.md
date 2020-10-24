@@ -6,7 +6,7 @@
 * wait a few minutes
 * After installation is complete, then run "npm run serve"
 
-# Screenshots of the LearnNow App
+# Previews of the LearnNow App
 # live link: https://learnnow.netlify.app
 1. ![1](https://user-images.githubusercontent.com/58645797/95485341-0c111300-093e-11eb-8259-fe972d222e4f.png)<br><br><hr><br>
 # live link: https://learnnow.netlify.app
