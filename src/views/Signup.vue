@@ -92,7 +92,7 @@ export default {
       } catch (error) {
         swal({
           title: "Sign up failed!",
-          text: "Please, check your internet connection and try again!",
+          text: "Please, check your internet connection and try again or the email already exists in our records!",
           // icon: "warning",
           button: "OK",
           dangerMode: true,
