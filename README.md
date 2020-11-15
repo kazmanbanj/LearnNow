@@ -1,4 +1,5 @@
 # LearnNow App
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2684d3db-1f97-40b9-af9b-840c6480a05c/deploy-status)](https://app.netlify.com/sites/learnnow/deploys)
 
 **This is a self study app "LearnNow" basically for students. It is created with vue.jS, bootstrap css, firebase.**
 
