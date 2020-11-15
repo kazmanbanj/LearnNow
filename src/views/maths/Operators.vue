@@ -39,7 +39,7 @@
         &nbsp;
         <p class="result">=</p>
         &nbsp;
-        <p class="result">{{ parseInt(number1) + parseInt(number2) }}</p>
+        <p class="result">{{ parseFloat(number1) + parseFloat(number2) }}</p>
       </div>
       <p class="num1" v-if="$v.number1.$invalid || $v.number2.$invalid">
         Note: The number length must be less than or equal to 16 digits and must
@@ -82,7 +82,7 @@
         &nbsp;
         <p class="result">=</p>
         &nbsp;
-        <p class="result">{{ parseInt(number11) - parseInt(number22) }}</p>
+        <p class="result">{{ parseFloat(number11) - parseFloat(number22) }}</p>
       </div>
       <p class="num1" v-if="$v.number11.$invalid || $v.number22.$invalid">
         Note: The number length must be less than or equal to 16 digits and must
@@ -123,7 +123,7 @@
         &nbsp;
         <p class="result">=</p>
         &nbsp;
-        <p class="result">{{ parseInt(number111) * parseInt(number222) }}</p>
+        <p class="result">{{ parseFloat(number111) * parseFloat(number222) }}</p>
       </div>
       <p class="num1" v-if="$v.number111.$invalid || $v.number222.$invalid">
         Note: The number length must be less than or equal to 16 digits and must
@@ -164,7 +164,7 @@
         &nbsp;
         <p class="result">=</p>
         &nbsp;
-        <p class="result">{{ parseInt(number1111) / parseInt(number2222) }}</p>
+        <p class="result">{{ parseFloat(number1111) / parseFloat(number2222) }}</p>
       </div>
       <p class="num1" v-if="$v.number1111.$invalid || $v.number2222.$invalid">
         Note: The number length must be less than or equal to 16 digits and must
@@ -256,6 +256,7 @@ export default {
   line-height: 40px;
   padding-left: 30px;
   border: 2px dashed black;
+  background-color: rgba(255, 255, 255, 0.096);
 }
 
 .addbtn {
