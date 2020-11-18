@@ -37,7 +37,7 @@
       </div>
       <div class="col span-1-of-2">
         <ul class="footer-nav">
-          <li class="foottext">Copyright &copy; 2020 by Learnnow. All rights reserved</li>
+          <li class="foottext">Copyright &copy; 2020 - <span>{{new Date().getFullYear()}}</span> by Learnnow. All rights reserved</li>
         </ul>
       </div>
     </div>
