@@ -37,7 +37,7 @@
       </div>
       <div class="col span-1-of-2">
         <ul class="footer-nav">
-          <li class="foottext">Copyright &copy; 2020 - <span>{{new Date().getFullYear()}}</span> by Learnnow. All rights reserved</li>
+          <li class="foottext">Copyright &copy; 2020 - <span>{{ year }}</span> by Learnnow. All rights reserved</li>
         </ul>
       </div>
     </div>
@@ -45,7 +45,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      year: new Date().getFullYear()
+    }
+  }
+};
 </script>
 
 <style>
