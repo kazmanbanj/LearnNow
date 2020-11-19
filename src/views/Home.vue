@@ -83,12 +83,12 @@
           symbol, or figure, representing a particular quantity and used in
           counting and making calculations. They are mathematical objects used
           to count, measure and label. LearnNow Numbers is basically for nursery
-          school students which helps them learn the various numbers we have.
-          The LearnNow Numbers also lets you add more numbers as you get to know
+          school students which help them learn the various numbers we have.
+          The LearnNow Numbers also let you add more numbers as you get to know
           each of them. Know your numbers with ease by clicking
           <a href="/number" style="text-decoration: none;">Numbers</a> under the
           Maths section to know the various numbers we have. It will be fun all
-          through as it lets you add and delete numbers in just one click.
+          through as it lets you add more numbers in just one click.
         </p>
       </div>
       <div class="homebord arithhome">
@@ -103,7 +103,7 @@
         </h2>
         <p class="homewords">
           <strong>Arithmetic Operator</strong> is a mathematical function that
-          takes two operands and perform a calculation on them. LearnNow
+          takes two or more operands and perform a calculation on them. LearnNow
           Arithmetic Operator helps you learn how to add, subtract, divide and
           multiply numbers with ease. It lets you improve your calculations
           skill. Know your Arithmetic Operators with ease by clicking
@@ -127,7 +127,7 @@
         <p class="homewords">
           <strong>Add&Minus</strong> stands for Addition and Subtraction.
           LearnNow Add&Minus helps you learn Addition and Sutraction of numbers
-          with ease. It lets you play the LearnNow add and minus game that will
+          with ease. It lets you play the LearnNow Add and Minus game that will
           improve your addition and subtraction skill. Know your addition and
           subtraction with ease by clicking
           <a href="/addMinus" style="text-decoration: none;">Add&Minus</a> under
@@ -148,7 +148,7 @@
         <p class="homewords">
           <strong>Times&Divide</strong> stands for Multiplication and Division.
           LearnNow Times&Divide helps you learn Multiplication and Division of
-          numbers with ease. It lets you play the LearnNow times and divide game
+          numbers with ease. It lets you play the LearnNow Times and Divide game
           that will improve your multiplication and division skill. Know your
           multiplication and division with ease by clicking
           <a href="/timesDivide" style="text-decoration: none;">Times&Divide</a>
