@@ -255,7 +255,7 @@ export default {
   padding-bottom: 30px;
   line-height: 40px;
   padding-left: 30px;
-  border: 2px dashed rgba(0, 0, 0, 0.192);
+  border: 2px dashed rgba(0, 0, 0, 0.733);
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.096);
 }
@@ -286,7 +286,7 @@ export default {
   padding-bottom: 30px;
   line-height: 50px;
   padding-left: 30px;
-  border: 2px dashed rgba(0, 0, 0, 0.192);
+  border: 2px dashed rgba(0, 0, 0, 0.733);
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.096);
 }
@@ -309,7 +309,7 @@ export default {
   padding-bottom: 30px;
   line-height: 50px;
   padding-left: 30px;
-  border: 2px dashed rgba(0, 0, 0, 0.192);
+  border: 2px dashed rgba(0, 0, 0, 0.733);
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.096);
 }
@@ -332,7 +332,7 @@ export default {
   padding-bottom: 30px;
   line-height: 50px;
   padding-left: 30px;
-  border: 2px dashed rgba(0, 0, 0, 0.192);
+  border: 2px dashed rgba(0, 0, 0, 0.733);
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.096);
 }
