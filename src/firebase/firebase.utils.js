@@ -2,13 +2,13 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 const config = {
-  apiKey: "AIzaSyBDhpmh_9F5o--PTkCpSCaDYgXqn5royZs",
-  authDomain: "learnnow-6d195.firebaseapp.com",
-  databaseURL: "https://learnnow-6d195.firebaseio.com",
-  projectId: "learnnow-6d195",
-  storageBucket: "learnnow-6d195.appspot.com",
-  messagingSenderId: "299623752447",
-  appId: "1:299623752447:web:2e2492cf62d00b6a39e2ca"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
