@@ -1,22 +1,35 @@
 <template>
   <div class="container">
-    <app-header></app-header>
+    <app-header :user="user"></app-header>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="adjustroute">
-          <router-view></router-view>
+          <router-view :user="user"></router-view>
         </div>
       </div>
     </div>
-    <app-footer></app-footer>
+    <app-footer :user="user"></app-footer>
   </div>
 </template>
 
 <script>
+import Firebase from "firebase";
 import Header from "./views/Header.vue";
 import Footer from "./views/Footer.vue";
 
 export default {
+  data: function() {
+    return {
+      user: null
+    }
+  },
+  mounted() {
+    Firebase.auth().onAuthStateChanged(user => {
+      if (user) {
+        this.user = user
+      }
+    })
+  },
   components: {
     appHeader: Header,
     appFooter: Footer,

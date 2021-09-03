@@ -65,8 +65,20 @@
           </li>
         </ul>
         <ul class="navbar-nav mr-sm-2" v-if="loggedIn">
-          <li class="nav-item">
-            <a class="nav-link" href="#" @click="signOut">Sign Out</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="text-transform:capitalize;"
+            >{{ user && user.email.substring(0,10)+"..." }}</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" @click="signOut">Sign Out</a>
+            </div>
           </li>
         </ul>
         <ul class="navbar-nav" style="margin: 0px 0px 0px auto;" v-else>
@@ -86,6 +98,7 @@
 import { auth } from "../firebase/firebase.utils";
 
 export default {
+  props: ['user'],
   mounted() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
       this.loggedIn = !!user;
