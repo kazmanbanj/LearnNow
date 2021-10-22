@@ -38,7 +38,7 @@
           <strong>Alphabets</strong> are a set of letters or symbols in a fixed
           order used to represent the basic set of speech sounds of a language,
           which consists of a set of letters from A to Z. The LearnNow Alphabets
-          is basically for nursery school students which displays the capital
+          is basically for nursery school students which display the capital
           letters, small letters, vowels and consonants for them to study. Know
           your alphabets with ease by clicking
           <a href="/alphabet" style="text-decoration: none;">Alphabets</a> under
@@ -58,7 +58,7 @@
         </h2>
         <p class="homewords">
           <strong>EngWords</strong> stands for English Words. LearnNow English
-          Words helps you learn new words and most common words in english. It
+          Words helps you learn new words and the most common words in english. It
           also allows you to study the words and try to spell them offhand so as
           to improve your vocabulary and explore language. Know your english
           words with ease by clicking
@@ -82,8 +82,8 @@
           <strong>Number</strong> is an arithmetical value, expressed by a word,
           symbol, or figure, representing a particular quantity and used in
           counting and making calculations. They are mathematical objects used
-          to count, measure and label. LearnNow Numbers is basically for nursery
-          school students which help them learn the various numbers we have.
+          to count, measure, and label. LearnNow Numbers is basically for nursery
+          school students which helps them learn the various numbers we have.
           The LearnNow Numbers also let you add more numbers as you get to know
           each of them. Know your numbers with ease by clicking
           <a href="/number" style="text-decoration: none;">Numbers</a> under the
@@ -103,10 +103,10 @@
         </h2>
         <p class="homewords">
           <strong>Arithmetic Operator</strong> is a mathematical function that
-          takes two or more operands and perform a calculation on them. LearnNow
+          takes two or more operands and performs a calculation on them. LearnNow
           Arithmetic Operator helps you learn how to add, subtract, divide and
           multiply numbers with ease. It lets you improve your calculations
-          skill. Know your Arithmetic Operators with ease by clicking
+          skills. Know your Arithmetic Operators with ease by clicking
           <a href="/arithmeticOperator" style="text-decoration: none;"
             >Arithmetic Operators</a
           >
@@ -126,9 +126,9 @@
         </h2>
         <p class="homewords">
           <strong>Add&Minus</strong> stands for Addition and Subtraction.
-          LearnNow Add&Minus helps you learn Addition and Sutraction of numbers
+          LearnNow Add&Minus helps you learn the Addition and Subtraction of numbers
           with ease. It lets you play the LearnNow Add and Minus game that will
-          improve your addition and subtraction skill. Know your addition and
+          improve your addition and subtraction skills. Know your addition and
           subtraction with ease by clicking
           <a href="/addMinus" style="text-decoration: none;">Add&Minus</a> under
           the Maths section to play the addition and subtraction game. It will
@@ -149,7 +149,7 @@
           <strong>Times&Divide</strong> stands for Multiplication and Division.
           LearnNow Times&Divide helps you learn Multiplication and Division of
           numbers with ease. It lets you play the LearnNow Times and Divide game
-          that will improve your multiplication and division skill. Know your
+          that will improve your multiplication and division skills. Know your
           multiplication and division with ease by clicking
           <a href="/timesDivide" style="text-decoration: none;">Times&Divide</a>
           under the Maths section to play the multiplication and division game.
@@ -168,7 +168,7 @@
           Calc
         </h2>
         <p class="homewords">
-          <strong>Calc</strong> stands for calculator. Calculator is something
+          <strong>Calc</strong> stands for the calculator. A calculator is something
           that performs arithmetic operations on numbers, it could be a small
           electronic device with a keyboard and a visual display. It was
           invented by <strong>Jack Kilby</strong>. This app has some cool

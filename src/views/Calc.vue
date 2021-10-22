@@ -29,14 +29,14 @@
       <h2 style="margin-bottom: 0px; text-align:center; ">LearnNow Caculator Tips</h2>
       <p
         style="font-size: 20px; text-align:left;"
-      >This basic calculator will be useful for users who are first time user of a calculator. This will enable the users to be able to know how to perform arithmetic operations on numbers. Users should also take note of the following information:</p>
+      >This basic calculator will be useful for users who are first-time users of a calculator. This will enable the users to be able to know how to perform arithmetic operations on numbers. Users should also take note of the following information</p>
       <ul>
         <li
           style="font-size: 20px; text-align:left"
         >The "C" button above stands for clear i.e. to clear the display screen.</li>
         <li
           style="font-size: 20px; text-align:left"
-        >The "+/-" button above represents plus or minus sign. It is useful when you want to obtain either a negative number or a positive number. You can derive it by clicking on any number, then click the "+/-" button.</li>
+        >The "+/-" button above represents a plus or minus sign. It is useful when you want to obtain either a negative number or a positive number. You can derive it by clicking on any number, then clicking the "+/-" button.</li>
         <li
           style="font-size: 20px; text-align:left"
         >The "%" button represents the percentage sign. Click on any number, then click on the "%" button to display the percentage of the number.</li>
@@ -57,7 +57,7 @@
         >The "=" button represents the equals sign. It is used to get the result of any equation performed.</li>
         <li
           style="font-size: 20px; text-align:left"
-        >The "." button represents the decimal point. It is used to seperate the whole number part from the fractional part of a number.</li>
+        >The "." button represents the decimal point. It is used to separate the whole number part from the fractional part of a number.</li>
         <li style="font-size: 20px; text-align:left">The "0" button represents the number "Zero".</li>
         <li style="font-size: 20px; text-align:left">The "1" button represents the number "One".</li>
         <li style="font-size: 20px; text-align:left">The "2" button represents the number "Two".</li>

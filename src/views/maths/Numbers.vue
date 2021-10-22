@@ -14,7 +14,7 @@
           <h3><u>Info:</u></h3>
           <ul>
             <li class="textbig">
-              click on the "Next Number" button to display the next number
+              Click on the "Next Number" button to display the next number.
             </li>
           </ul>
         </div>

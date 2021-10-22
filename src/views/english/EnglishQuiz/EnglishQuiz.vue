@@ -3,7 +3,7 @@
     <h1 class="tophead">Know Your English Words</h1>
     <h3>
       Info: Click on the button below to display an english word and try to
-      spell them offhand
+      spell them offhand.
     </h3>
     <div class="cta">
       <span><a @click="gentext">Generate word</a></span>

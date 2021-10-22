@@ -101,7 +101,7 @@
       <div style="margin-top: 15px">
         <p style="font-size: 20px">
           <b>Note</b>:
-          <i>Under this, users should be able to differentiate between colours after changing the colour from gray to whatever colour displays.</i>
+          <i>Under this, users should be able to differentiate between colours after changing the colour from gray to whatever colour is displayed.</i>
         </p>
       </div>
     </div>

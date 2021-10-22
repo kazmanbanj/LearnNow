@@ -9,7 +9,7 @@
           <u>Connect With Us</u>
         </h3>
         <p class="connecttext">
-          We are here to help and answer any question you might have.
+          We are here to help and answer any questions you may have.
           <br />We look forward to hearing from you.
         </p>
       </div>
