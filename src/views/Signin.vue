@@ -51,7 +51,6 @@ export default {
       try {
         const val = await auth
           .signInWithEmailAndPassword(this.email, this.password)
-          // console.log(val)
           .then(() =>
             swal({
               title: `Signed in as ${this.email}!`,
@@ -66,7 +65,6 @@ export default {
           title: "Wrong Email or Password!",
           text:
             "Please, input the correct login details or check your internet connection and try again!",
-          // icon: "warning",
           button: "OK",
           dangerMode: true,
         });
@@ -89,7 +87,6 @@ export default {
           title: "Login Failed!",
           text:
             "Please, input the correct login details or check your internet connection and try again!",
-          // icon: "warning",
           button: "OK",
           dangerMode: true,
         });

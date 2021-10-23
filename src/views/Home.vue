@@ -174,11 +174,7 @@
           invented by <strong>Jack Kilby</strong>. This app has some cool
           arithmetic functions you can play with. Test your calculator skills
           with ease by clicking
-          <a href="/standardCalc" style="text-decoration: none;"
-            >LearnNow Calc</a
-          >
-          to see some fantastic arithmetic functions we have. It will be fun all
-          through as you get to know the basic arithmetic operations in action.
+          <a href="/standardCalc" style="text-decoration: none;">LearnNow Calc</a> to see some fantastic arithmetic functions we have. It will be fun all through as you get to know the basic arithmetic operations in action.
         </p>
       </div>
     </div>
@@ -187,8 +183,7 @@
       <h1 class="welcometext">Welcome to LearnNow Study App</h1>
       <h2 class="hometext1">Time to learn something new now!</h2>
       <p class="hometext">
-        You found the best place to learn - and now you're just one sign in (or
-        sign up) away from it!
+        You found the best place to learn - and now you're just one sign in (or sign up) away from it!
       </p>
       <div class="ctad">
         <a href="/signin">Sign In</a>
