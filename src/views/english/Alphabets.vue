@@ -479,7 +479,6 @@
             return {
                 load1: true, load2: true, load3: true, load4: true, load5: true, load6: true, load7: true, load8: true, load9: true, load10: true, load11: true, load12: true, load13: true, load14: true, load15: true, load16: true, load17: true, load18: true, load19: true, load20: true, load21: true, load22: true, load23: true, load24: true, load25: true, load26: true,
                 elementWidth: 80,
-                alphabets: ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"],
                 alphabets1: ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"],
                 vowels: ["A","E","I","O","U"],
                 consonants: ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"]
