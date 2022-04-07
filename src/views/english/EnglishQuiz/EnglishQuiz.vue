@@ -11,7 +11,7 @@
       <p id="press" style="word-wrap:break-word;"></p>
     </div>
 
-    <div class="english2">
+    <!-- <div class="english2">
       <h1 class="tophead">Know Your Advanced English Words</h1>
       <h3 class="text">
         Info: Click on the button below to display an english word and try to spell them offhand.
@@ -20,7 +20,7 @@
         <span><a @click="advancedGentext">Generate word</a></span>
       </div>
       <p id="press2" style="word-wrap:break-word;"></p>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -49,7 +49,7 @@ export default {
   height: 600px;
   border: 2px dashed black;
   border-radius: 10px;
-  margin: 15px 0px 50px 0px;
+  margin: 15px 0px 0px 0px;
   padding: 4px;
 }
 
@@ -57,7 +57,7 @@ export default {
   height: 600px;
   border: 2px dashed black;
   border-radius: 10px;
-  margin: 15px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 4px;
 }
 
