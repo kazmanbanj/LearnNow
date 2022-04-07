@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import advancedEnglishWords from './AdvancedEngwords.js';
+// import advancedEnglishWords from './AdvancedEngwords.js';
 
 export default {
   methods: {
@@ -35,11 +35,11 @@ export default {
       para.innerHTML = randomWords();
     },
 
-    advancedGentext() {
-      var advancedWords = advancedEnglishWords;
-      var para2 = document.getElementById("press2");
-      para2.innerHTML = advancedWords[Math.floor(Math.random() * advancedWords.length)];
-    },
+    // advancedGentext() {
+    //   var advancedWords = advancedEnglishWords;
+    //   var para2 = document.getElementById("press2");
+    //   para2.innerHTML = advancedWords[Math.floor(Math.random() * advancedWords.length)];
+    // },
   },
 };
 </script>
