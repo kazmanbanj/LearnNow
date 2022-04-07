@@ -1,7 +1,4 @@
 {
-    "env": {
-      "development" : {
-        "compact": false
-      }
-    }
+    "presets": ["es2015", "vue"],
+    "compact" : true
 }
