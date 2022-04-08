@@ -11,7 +11,7 @@
       <p id="press" style="word-wrap:break-word;"></p>
     </div>
 
-    <div class="english2">
+    <!-- <div class="english2">
       <h1 class="tophead">Know Your Advanced English Words</h1>
       <h3 class="text">
         Info: Click on the button below to display an english word and try to spell them offhand.
@@ -20,12 +20,12 @@
         <span><a @click="advancedGentext">Generate word</a></span>
       </div>
       <p id="press2" style="word-wrap:break-word;"></p>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import advancedEnglishWords from './AdvancedEngwords.js';
+// import advancedEnglishWords from './AdvancedEngwords.js';
 
 export default {
   methods: {
@@ -35,11 +35,11 @@ export default {
       para.innerHTML = randomWords();
     },
 
-    advancedGentext() {
-      var advancedWords = advancedEnglishWords;
-      var para2 = document.getElementById("press2");
-      para2.innerHTML = advancedWords[Math.floor(Math.random() * advancedWords.length)];
-    },
+    // advancedGentext() {
+    //   var advancedWords = advancedEnglishWords;
+    //   var para2 = document.getElementById("press2");
+    //   para2.innerHTML = advancedWords[Math.floor(Math.random() * advancedWords.length)];
+    // },
   },
 };
 </script>
@@ -49,17 +49,17 @@ export default {
   height: 600px;
   border: 2px dashed black;
   border-radius: 10px;
-  margin: 15px 0px 50px 0px;
+  margin: 15px 0px 0px 0px;
   padding: 4px;
 }
 
-.english2 {
+/* .english2 {
   height: 600px;
   border: 2px dashed black;
   border-radius: 10px;
   margin: 0px 0px 0px 0px;
   padding: 4px;
-}
+} */
 
 .tophead {
   margin-top: 30px;
@@ -78,14 +78,14 @@ p {
   text-align: center;
 }
 
-p#press2 {
+/* p#press2 {
   margin-top: 20px;
   font-family: sans-serif;
   font-size: 70px;
   text-transform: uppercase;
   color: rgb(3, 53, 48);
   text-align: center;
-}
+} */
 
 h1,
 h3 {
