@@ -37,7 +37,7 @@ export default {
 
     async advancedGentext() {
       const response = await axios ({
-        url: "https://whispering-tor-04671.herokuapp.com/https://advancedenglishwords.netlify.app",
+        url: process.env.VUE_APP_advancedEnglishWordsUrl,
         method: "get"
       });
         
