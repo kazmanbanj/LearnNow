@@ -2,7 +2,7 @@
   <div>
     <div class="english">
       <h1 class="tophead">Know Your English Words</h1>
-      <h3 class="text">
+      <h3>
         Info: Click on the button below to display an english word and try to spell them offhand.
       </h3>
       <div class="cta">
@@ -11,21 +11,21 @@
       <p id="press" style="word-wrap:break-word;"></p>
     </div>
 
-    <!-- <div class="english2">
+    <div class="english2">
       <h1 class="tophead">Know Your Advanced English Words</h1>
-      <h3 class="text">
-        Info: Click on the button below to display an english word and try to spell them offhand.
-      </h3>
+      <h4>
+        Info: This section contains advanced english words. Click on the button below to display an advanced english word and try to spell them offhand.
+      </h4>
       <div class="cta">
         <span><a @click="advancedGentext">Generate word</a></span>
       </div>
       <p id="press2" style="word-wrap:break-word;"></p>
-    </div> -->
+    </div>
   </div>
 </template>
 
 <script>
-// import advancedEnglishWords from './AdvancedEngwords.js';
+import axios from 'axios';
 
 export default {
   methods: {
@@ -35,13 +35,43 @@ export default {
       para.innerHTML = randomWords();
     },
 
-    // advancedGentext() {
-    //   var advancedWords = advancedEnglishWords;
-    //   var para2 = document.getElementById("press2");
-    //   para2.innerHTML = advancedWords[Math.floor(Math.random() * advancedWords.length)];
-    // },
+    async advancedGentext() {
+      const response = await axios ({
+        url: "https://whispering-tor-04671.herokuapp.com/https://advancedenglishwords.netlify.app",
+        method: "get"
+      });
+        
+      const advancedWords = response.data.split(',');
+      var para2 = document.getElementById("press2");
+      var advWords = advancedWords[Math.floor(Math.random() * advancedWords.length)];
+      para2.innerHTML = advWords.replace(/['"]+/g, '');
+    }
   },
 };
+
+// async function getQuote() {
+//     loading();
+//     const proxyUrl = 'https://whispering-tor-04671.herokuapp.com/'
+//     const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
+//     try {
+//         const response = await fetch(proxyUrl + apiUrl);
+//         const data = await response.json();
+//         if (data.quoteAuthor === '') {
+//             authorText.innerText = 'Unknown';
+//         } else {
+//             authorText.innerText = data.quoteAuthor;
+//         }
+//         if (data.quoteText.length > 120) {
+//             quoteText.classList.add('long-quote');
+//         } else {
+//             quoteText.classList.remove('long-quote');
+//         }
+//         quoteText.innerText = data.quoteText;
+//         complete();
+//     } catch (error) {
+//         getQuote();
+//     }
+// }
 </script>
 
 <style scoped>
@@ -49,17 +79,17 @@ export default {
   height: 600px;
   border: 2px dashed black;
   border-radius: 10px;
-  margin: 15px 0px 0px 0px;
+  margin: 15px 0px 50px 0px;
   padding: 4px;
 }
 
-/* .english2 {
+.english2 {
   height: 600px;
   border: 2px dashed black;
   border-radius: 10px;
   margin: 0px 0px 0px 0px;
   padding: 4px;
-} */
+}
 
 .tophead {
   margin-top: 30px;
@@ -78,18 +108,22 @@ p {
   text-align: center;
 }
 
-/* p#press2 {
+p#press2 {
   margin-top: 20px;
   font-family: sans-serif;
   font-size: 70px;
   text-transform: uppercase;
   color: rgb(3, 53, 48);
   text-align: center;
-} */
+}
 
 h1,
 h3 {
   text-align: center;
+}
+
+h4 {
+  padding: 15px;
 }
 
 .btneng {
