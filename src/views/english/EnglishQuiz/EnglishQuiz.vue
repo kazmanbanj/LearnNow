@@ -19,7 +19,13 @@
       <div class="cta">
         <span><a @click="advancedGentext">Generate word</a></span>
       </div>
-      <p id="press2" style="word-wrap:break-word;"></p>
+      <div style="text-align:center">
+        <a :href="'https://www.google.com/search?q=' + wordGen + '+meaning+in+english'" target="_blank" id="press2" style="word-wrap:break-word;"></a>
+        <br>
+        <span :class="(checkMeaningInfo())">
+          <small>{{ wordInfo }}</small>
+        </span>
+      </div>
     </div>
   </div>
 </template>
@@ -28,6 +34,12 @@
 import axios from 'axios';
 
 export default {
+  data() {
+    return {
+      wordGen: "",
+      wordInfo: ""
+    }
+  },
   methods: {
     gentext() {
       var randomWords = require('random-words');
@@ -45,33 +57,23 @@ export default {
       var para2 = document.getElementById("press2");
       var advWords = advancedWords[Math.floor(Math.random() * advancedWords.length)];
       para2.innerHTML = advWords.replace(/['"]+/g, '');
+
+      this.wordGen = para2.innerHTML;
+      this.wordInfo = "Click on the word to check the meaning";
+    },
+
+    checkMeaningInfo() {
+      if (this.wordGen != "") {
+        return "badge badge-info"
+      }
+    }
+  },
+  computed: {
+    wordGen() {
+      return this.wordGen 
     }
   },
 };
-
-// async function getQuote() {
-//     loading();
-//     const proxyUrl = 'https://whispering-tor-04671.herokuapp.com/'
-//     const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
-//     try {
-//         const response = await fetch(proxyUrl + apiUrl);
-//         const data = await response.json();
-//         if (data.quoteAuthor === '') {
-//             authorText.innerText = 'Unknown';
-//         } else {
-//             authorText.innerText = data.quoteAuthor;
-//         }
-//         if (data.quoteText.length > 120) {
-//             quoteText.classList.add('long-quote');
-//         } else {
-//             quoteText.classList.remove('long-quote');
-//         }
-//         quoteText.innerText = data.quoteText;
-//         complete();
-//     } catch (error) {
-//         getQuote();
-//     }
-// }
 </script>
 
 <style scoped>
@@ -108,7 +110,7 @@ p {
   text-align: center;
 }
 
-p#press2 {
+a#press2 {
   margin-top: 20px;
   font-family: sans-serif;
   font-size: 70px;
@@ -173,7 +175,7 @@ h4 {
     text-align: center;
   }
 
-  p#press2 {
+  a#press2 {
     margin-top: 20px;
     font-family: sans-serif;
     font-size: 40px;
