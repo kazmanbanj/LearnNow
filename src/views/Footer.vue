@@ -4,12 +4,7 @@
       <div class="col span-1-of-2">
         <ul class="social-links">
           <li>
-            <a href="#">
-              <ion-icon name="logo-github" class="ion-social-github"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a href="https://m.facebook.com/KazmanBanjoko">
+            <a href="https://www.facebook.com/LearnNow-102183379139001/">
               <ion-icon name="logo-facebook" class="ion-social-facebook"></ion-icon>
             </a>
           </li>
@@ -19,18 +14,8 @@
             </a>
           </li>
           <li>
-            <a href="http://www.linkedin.com/in/kazeem-banjoko-3a0849189">
-              <ion-icon name="logo-linkedin" class="ion-social-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li>
             <a href="https://www.instagram.com/kman_banj">
               <ion-icon name="logo-instagram" class="ion-social-instagram"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.yahoo.com/kazmanbanjoko">
-              <ion-icon name="logo-yahoo" class="ion-social-yahoo"></ion-icon>
             </a>
           </li>
         </ul>
