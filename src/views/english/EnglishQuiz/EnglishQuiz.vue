@@ -3,25 +3,32 @@
     <div class="english">
       <h1 class="tophead">Know Your English Words</h1>
       <h3>
-        Info: Click on the button below to display an english word and try to spell them offhand.
+        Info: Click on the button below to display an english word and try to
+        spell them offhand.
       </h3>
       <div class="cta">
         <span><a @click="gentext">Generate word</a></span>
       </div>
-      <p id="press" style="word-wrap:break-word;"></p>
+      <p id="press" style="word-wrap: break-word;"></p>
     </div>
 
     <div class="english2">
       <h1 class="tophead">Know Your Advanced English Words</h1>
       <h4>
-        Info: This section contains advanced english words. Click on the button below to display an advanced english word and try to spell them offhand.
+        Info: This section contains advanced english words. Click on the button
+        below to display an advanced english word and try to spell them offhand.
       </h4>
       <div class="cta">
         <span><a @click="advancedGentext">Generate word</a></span>
       </div>
-      <div style="text-align:center">
-        <a :href="'https://www.google.com/search?q=' + wordGen + '+meaning+in+english'" target="_blank" id="press2" style="word-wrap:break-word;"></a>
-        <br>
+      <div style="text-align: center;">
+        <a
+          :href="'https://www.google.com/search?q=' + wordGen + '+definition'"
+          target="_blank"
+          id="press2"
+          style="word-wrap: break-word;"
+        ></a>
+        <br />
         <span :class="(checkMeaningInfo())">
           <small>{{ wordInfo }}</small>
         </span>
@@ -31,32 +38,33 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   data() {
     return {
       wordGen: "",
-      wordInfo: ""
-    }
+      wordInfo: "",
+    };
   },
   methods: {
     gentext() {
-      var randomWords = require('random-words');
+      var randomWords = require("random-words");
       var para = document.getElementById("press");
       para.innerHTML = randomWords();
     },
 
     async advancedGentext() {
-      const response = await axios ({
+      const response = await axios({
         url: process.env.VUE_APP_advancedEnglishWordsUrl,
-        method: "get"
+        method: "get",
       });
-        
-      const advancedWords = response.data.split(',');
+
+      const advancedWords = response.data.split(",");
       var para2 = document.getElementById("press2");
-      var advWords = advancedWords[Math.floor(Math.random() * advancedWords.length)];
-      para2.innerHTML = advWords.replace(/['"]+/g, '');
+      var advWords =
+        advancedWords[Math.floor(Math.random() * advancedWords.length)];
+      para2.innerHTML = advWords.replace(/['"]+/g, "");
 
       this.wordGen = para2.innerHTML;
       this.wordInfo = "Click on the word to check the meaning";
@@ -64,14 +72,14 @@ export default {
 
     checkMeaningInfo() {
       if (this.wordGen != "") {
-        return "badge badge-info"
+        return "badge badge-info";
       }
-    }
+    },
   },
   computed: {
     wordGen() {
-      return this.wordGen 
-    }
+      return this.wordGen;
+    },
   },
 };
 </script>
