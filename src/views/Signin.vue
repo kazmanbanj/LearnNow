@@ -29,6 +29,10 @@
       <button @click="signInWithgoogle" class="googlebtn">
         Sign in with Google
       </button>
+
+      <button @click="resetPassword" class="resetbtn">
+        Reset Password
+      </button>
     </div>
     <span class="signfoot">Need an account? Click here to <router-link to="/signup">register</router-link></span>
   </div>
@@ -47,6 +51,26 @@ export default {
     };
   },
   methods: {
+    resetPassword() {
+      const auth = auth.auth();
+      auth.sendPasswordResetEmail(auth.currentUser.email).then(() => 
+      swal({
+          title: `Signed in as ${this.email}!`,
+          text: "You've successfully signed in!",
+          icon: "success",
+          button: "Continue",
+        })
+      ).catch((error) => {
+        swal({
+          title: "Email doesn't exist on our records!",
+          text:
+            "Please, input the correct email or check your internet connection and try again!",
+          button: "OK",
+          dangerMode: true,
+        });
+      })
+    },
+
     async pressed() {
       try {
         const val = await auth
