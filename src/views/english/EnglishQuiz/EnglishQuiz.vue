@@ -12,7 +12,7 @@
       <p id="press" style="word-wrap: break-word;"></p>
     </div>
 
-    <div class="english2">
+    <!-- <div class="english2">
       <h1 class="tophead">Know Your Advanced English Words</h1>
       <h4>
         Info: This section contains advanced english words. Click on the button
@@ -33,7 +33,7 @@
           <small>{{ wordInfo }}</small>
         </span>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -54,27 +54,27 @@ export default {
       para.innerHTML = randomWords();
     },
 
-    async advancedGentext() {
-      const response = await axios({
-        url: process.env.VUE_APP_advancedEnglishWordsUrl,
-        method: "get",
-      });
+    // async advancedGentext() {
+    //   const response = await axios({
+    //     url: process.env.VUE_APP_advancedEnglishWordsUrl,
+    //     method: "get",
+    //   });
 
-      const advancedWords = response.data.split(",");
-      var para2 = document.getElementById("press2");
-      var advWords =
-        advancedWords[Math.floor(Math.random() * advancedWords.length)];
-      para2.innerHTML = advWords.replace(/['"]+/g, "");
+    //   const advancedWords = response.data.split(",");
+    //   var para2 = document.getElementById("press2");
+    //   var advWords =
+    //     advancedWords[Math.floor(Math.random() * advancedWords.length)];
+    //   para2.innerHTML = advWords.replace(/['"]+/g, "");
 
-      this.wordGen = para2.innerHTML;
-      this.wordInfo = "Click on the word to check the meaning";
-    },
+    //   this.wordGen = para2.innerHTML;
+    //   this.wordInfo = "Click on the word to check the meaning";
+    // },
 
-    checkMeaningInfo() {
-      if (this.wordGen != "") {
-        return "badge badge-info";
-      }
-    },
+    // checkMeaningInfo() {
+    //   if (this.wordGen != "") {
+    //     return "badge badge-info";
+    //   }
+    // },
   },
   computed: {
     wordGen() {
