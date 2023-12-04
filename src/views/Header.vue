@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <nav class="navbar navbar-expand-lg navbar-light navedit bg-light">
-      <router-link class="navbar-brand" to="/">LearnNow</router-link>
+      <a class="navbar-brand" href="/">LearnNow</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -16,77 +16,77 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <router-link class="nav-link" to="/about">About</router-link>
+            <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/contact">Contact</router-link>
+            <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto" v-if="loggedIn">
           <li class="nav-item">
-            <router-link class="nav-link" to="/colors">Colours</router-link>
+            <a class="nav-link" href="/colors">Colours</a>
           </li>
           <li class="nav-item dropdown">
-            <router-link
+            <a
               class="nav-link dropdown-toggle"
-              to="#"
+              href="#"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >English</router-link>
+            >English</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <router-link class="dropdown-item" to="/alphabet">Alphabets</router-link>
-              <router-link class="dropdown-item" to="/engQuiz">EngWords</router-link>
+              <a class="dropdown-item" href="/alphabet">Alphabets</a>
+              <a class="dropdown-item" href="/engQuiz">EngWords</a>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <router-link
+            <a
               class="nav-link dropdown-toggle"
-              to="#"
+              href="#"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >Maths</router-link>
+            >Maths</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <router-link class="dropdown-item active-class" to="/number">Numbers</router-link>
-              <router-link class="dropdown-item" to="/arithmeticOperator">Arithmetic Operators</router-link>
-              <router-link class="dropdown-item" to="/addMinus">Add&Minus</router-link>
-              <router-link class="dropdown-item" to="/timesDivide">Times&Divide</router-link>
+              <a class="dropdown-item active-class" href="/number">Numbers</a>
+              <a class="dropdown-item" href="/arithmeticOperator">Arithmetic Operators</a>
+              <a class="dropdown-item" href="/addMinus">Add&Minus</a>
+              <a class="dropdown-item" href="/timesDivide">Times&Divide</a>
             </div>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active-class" to="/standardCalc">Calc</router-link>
+            <a class="nav-link active-class" href="/standardCalc">Calc</a>
           </li>
         </ul>
         <ul class="navbar-nav mr-sm-2" v-if="loggedIn">
           <li class="nav-item dropdown">
-            <router-link
+            <a
               class="nav-link dropdown-toggle"
-              to="#"
+              href="#"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
               style="text-transform:capitalize;"
-            >{{ user && user.email.substring(0,10)+"..." }}</router-link>
+            >{{ user && user.email.substring(0,10)+"..." }}</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <router-link class="dropdown-item" to="#" @click="signOut">Sign Out</router-link>
+              <a class="dropdown-item" href="#" @click="signOut">Sign Out</a>
             </div>
           </li>
         </ul>
         <ul class="navbar-nav" style="margin: 0px 0px 0px auto;" v-else>
           <li class="nav-item">
-            <router-link class="nav-link" to="/signin">Sign in</router-link>
+            <a class="nav-link" href="/signin">Sign in</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/signup">Sign Up</router-link>
+            <a class="nav-link" href="/signup">Sign Up</a>
           </li>
         </ul>
       </div>

@@ -18,7 +18,7 @@
           reflects or emits light. This app has some cool colours which you can
           play with, which will also display any colour you need to know about.
           Know your colours with ease by clicking
-          <router-link to="/colors" style="text-decoration: none;">LearnNow Colours</router-link>
+          <a href="/colors" style="text-decoration: none;">LearnNow Colours</a>
           to see some fantastic colours we have. It will be fun all through as
           you get to know the kinds of colour we have.
         </p>
@@ -41,7 +41,7 @@
           is basically for nursery school students which display the capital
           letters, small letters, vowels and consonants for them to study. Know
           your alphabets with ease by clicking
-          <router-link to="/alphabet" style="text-decoration: none;">Alphabets</router-link> under
+          <a href="/alphabet" style="text-decoration: none;">Alphabets</a> under
           the English section to know the various alphabets we have. It will be
           fun all through as you get to know the Alphabets.
         </p>
@@ -62,7 +62,7 @@
           also allows you to study the words and try to spell them offhand so as
           to improve your vocabulary and explore language. Know your english
           words with ease by clicking
-          <router-link to="/engQuiz" style="text-decoration: none;">EngWords</router-link> under
+          <a href="/engQuiz" style="text-decoration: none;">EngWords</a> under
           the English section to know the various english words we have. It will
           be fun all through as you get to know the English words.
         </p>
@@ -86,7 +86,7 @@
           school students which helps them learn the various numbers we have.
           The LearnNow Numbers also let you add more numbers as you get to know
           each of them. Know your numbers with ease by clicking
-          <router-link to="/number" style="text-decoration: none;">Numbers</router-link> under the
+          <a href="/number" style="text-decoration: none;">Numbers</a> under the
           Maths section to know the various numbers we have. It will be fun all
           through as it lets you add more numbers in just one click.
         </p>
@@ -107,8 +107,8 @@
           Arithmetic Operator helps you learn how to add, subtract, divide and
           multiply numbers with ease. It lets you improve your calculations
           skills. Know your Arithmetic Operators with ease by clicking
-          <router-link to="/arithmeticOperator" style="text-decoration: none;"
-            >Arithmetic Operators</router-link
+          <a href="/arithmeticOperator" style="text-decoration: none;"
+            >Arithmetic Operators</a
           >
           under the Maths section to know the basic arithmetic operators we
           have. It will be fun all through as you get to know them.
@@ -130,7 +130,7 @@
           with ease. It lets you play the LearnNow Add and Minus game that will
           improve your addition and subtraction skills. Know your addition and
           subtraction with ease by clicking
-          <router-link to="/addMinus" style="text-decoration: none;">Add&Minus</router-link> under
+          <a href="/addMinus" style="text-decoration: none;">Add&Minus</a> under
           the Maths section to play the addition and subtraction game. It will
           be fun all through as you get to know how to add and subtract numbers.
         </p>
@@ -151,7 +151,7 @@
           numbers with ease. It lets you play the LearnNow Times and Divide game
           that will improve your multiplication and division skills. Know your
           multiplication and division with ease by clicking
-          <router-link to="/timesDivide" style="text-decoration: none;">Times&Divide</router-link>
+          <a href="/timesDivide" style="text-decoration: none;">Times&Divide</a>
           under the Maths section to play the multiplication and division game.
           It will be fun all through as you get to know how to multiply and
           divide numbers.
@@ -174,7 +174,7 @@
           invented by <strong>Jack Kilby</strong>. This app has some cool
           arithmetic functions you can play with. Test your calculator skills
           with ease by clicking
-          <router-link to="/standardCalc" style="text-decoration: none;">LearnNow Calc</router-link> to see some fantastic arithmetic functions we have. It will be fun all through as you get to know the basic arithmetic operations in action.
+          <a href="/standardCalc" style="text-decoration: none;">LearnNow Calc</a> to see some fantastic arithmetic functions we have. It will be fun all through as you get to know the basic arithmetic operations in action.
         </p>
       </div>
     </div>
@@ -186,8 +186,8 @@
         You found the best place to learn - and now you're just one sign in (or sign up) away from it!
       </p>
       <div class="ctad">
-        <router-link to="/signin">Sign In</router-link>
-        <router-link to="/signup">Sign Up</router-link>
+        <a href="/signin">Sign In</a>
+        <a href="/signup">Sign Up</a>
       </div>
     </div>
   </div>
